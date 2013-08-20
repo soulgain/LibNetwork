@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1843CE9417C33EAE0064E599 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843CE9317C33EAE0064E599 /* UIKit.framework */; };
+		1843CE9617C33EAE0064E599 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843CE9517C33EAE0064E599 /* Foundation.framework */; };
+		1843CE9817C33EAE0064E599 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1843CE9717C33EAE0064E599 /* CoreGraphics.framework */; };
+		1843CE9E17C33EAE0064E599 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1843CE9C17C33EAE0064E599 /* InfoPlist.strings */; };
+		1843CEA017C33EAE0064E599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843CE9F17C33EAE0064E599 /* main.m */; };
+		1843CEA417C33EAE0064E599 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843CEA317C33EAE0064E599 /* AppDelegate.m */; };
+		1843CEA617C33EAE0064E599 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1843CEA517C33EAE0064E599 /* Default.png */; };
+		1843CEA817C33EAE0064E599 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1843CEA717C33EAE0064E599 /* Default@2x.png */; };
+		1843CEAA17C33EAE0064E599 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1843CEA917C33EAE0064E599 /* Default-568h@2x.png */; };
+		1843CEAD17C33EAE0064E599 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843CEAC17C33EAE0064E599 /* ViewController.m */; };
+		1843CEB017C33EAE0064E599 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1843CEAE17C33EAE0064E599 /* ViewController.xib */; };
+		1843CEB917C340FA0064E599 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843CEB817C340FA0064E599 /* Network.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1843CEBC17C343490064E599 /* NetworkServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843CEBB17C343490064E599 /* NetworkServerManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1843CE9017C33EAE0064E599 /* LibNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1843CE9317C33EAE0064E599 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1843CE9517C33EAE0064E599 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1843CE9717C33EAE0064E599 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1843CE9B17C33EAE0064E599 /* LibNetwork-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LibNetwork-Info.plist"; sourceTree = "<group>"; };
+		1843CE9D17C33EAE0064E599 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1843CE9F17C33EAE0064E599 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1843CEA117C33EAE0064E599 /* LibNetwork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibNetwork-Prefix.pch"; sourceTree = "<group>"; };
+		1843CEA217C33EAE0064E599 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1843CEA317C33EAE0064E599 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1843CEA517C33EAE0064E599 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1843CEA717C33EAE0064E599 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1843CEA917C33EAE0064E599 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1843CEAB17C33EAE0064E599 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1843CEAC17C33EAE0064E599 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1843CEAF17C33EAE0064E599 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		1843CEB717C340FA0064E599 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		1843CEB817C340FA0064E599 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		1843CEBA17C343490064E599 /* NetworkServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkServerManager.h; sourceTree = "<group>"; };
+		1843CEBB17C343490064E599 /* NetworkServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkServerManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1843CE8D17C33EAE0064E599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843CE9417C33EAE0064E599 /* UIKit.framework in Frameworks */,
+				1843CE9617C33EAE0064E599 /* Foundation.framework in Frameworks */,
+				1843CE9817C33EAE0064E599 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1843CE8717C33EAE0064E599 = {
+			isa = PBXGroup;
+			children = (
+				1843CEB617C340FA0064E599 /* class */,
+				1843CE9917C33EAE0064E599 /* LibNetwork */,
+				1843CE9217C33EAE0064E599 /* Frameworks */,
+				1843CE9117C33EAE0064E599 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1843CE9117C33EAE0064E599 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1843CE9017C33EAE0064E599 /* LibNetwork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1843CE9217C33EAE0064E599 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1843CE9317C33EAE0064E599 /* UIKit.framework */,
+				1843CE9517C33EAE0064E599 /* Foundation.framework */,
+				1843CE9717C33EAE0064E599 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1843CE9917C33EAE0064E599 /* LibNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				1843CEA217C33EAE0064E599 /* AppDelegate.h */,
+				1843CEA317C33EAE0064E599 /* AppDelegate.m */,
+				1843CEAB17C33EAE0064E599 /* ViewController.h */,
+				1843CEAC17C33EAE0064E599 /* ViewController.m */,
+				1843CEAE17C33EAE0064E599 /* ViewController.xib */,
+				1843CE9A17C33EAE0064E599 /* Supporting Files */,
+			);
+			path = LibNetwork;
+			sourceTree = "<group>";
+		};
+		1843CE9A17C33EAE0064E599 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1843CE9B17C33EAE0064E599 /* LibNetwork-Info.plist */,
+				1843CE9C17C33EAE0064E599 /* InfoPlist.strings */,
+				1843CE9F17C33EAE0064E599 /* main.m */,
+				1843CEA117C33EAE0064E599 /* LibNetwork-Prefix.pch */,
+				1843CEA517C33EAE0064E599 /* Default.png */,
+				1843CEA717C33EAE0064E599 /* Default@2x.png */,
+				1843CEA917C33EAE0064E599 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1843CEB617C340FA0064E599 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				1843CEB717C340FA0064E599 /* Network.h */,
+				1843CEB817C340FA0064E599 /* Network.m */,
+				1843CEBA17C343490064E599 /* NetworkServerManager.h */,
+				1843CEBB17C343490064E599 /* NetworkServerManager.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1843CE8F17C33EAE0064E599 /* LibNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1843CEB317C33EAE0064E599 /* Build configuration list for PBXNativeTarget "LibNetwork" */;
+			buildPhases = (
+				1843CE8C17C33EAE0064E599 /* Sources */,
+				1843CE8D17C33EAE0064E599 /* Frameworks */,
+				1843CE8E17C33EAE0064E599 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibNetwork;
+			productName = LibNetwork;
+			productReference = 1843CE9017C33EAE0064E599 /* LibNetwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1843CE8817C33EAE0064E599 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = apple;
+			};
+			buildConfigurationList = 1843CE8B17C33EAE0064E599 /* Build configuration list for PBXProject "LibNetwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1843CE8717C33EAE0064E599;
+			productRefGroup = 1843CE9117C33EAE0064E599 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1843CE8F17C33EAE0064E599 /* LibNetwork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1843CE8E17C33EAE0064E599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843CE9E17C33EAE0064E599 /* InfoPlist.strings in Resources */,
+				1843CEA617C33EAE0064E599 /* Default.png in Resources */,
+				1843CEA817C33EAE0064E599 /* Default@2x.png in Resources */,
+				1843CEAA17C33EAE0064E599 /* Default-568h@2x.png in Resources */,
+				1843CEB017C33EAE0064E599 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1843CE8C17C33EAE0064E599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1843CEA017C33EAE0064E599 /* main.m in Sources */,
+				1843CEA417C33EAE0064E599 /* AppDelegate.m in Sources */,
+				1843CEAD17C33EAE0064E599 /* ViewController.m in Sources */,
+				1843CEB917C340FA0064E599 /* Network.m in Sources */,
+				1843CEBC17C343490064E599 /* NetworkServerManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1843CE9C17C33EAE0064E599 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1843CE9D17C33EAE0064E599 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1843CEAE17C33EAE0064E599 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1843CEAF17C33EAE0064E599 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1843CEB117C33EAE0064E599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1843CEB217C33EAE0064E599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1843CEB417C33EAE0064E599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LibNetwork/LibNetwork-Prefix.pch";
+				INFOPLIST_FILE = "LibNetwork/LibNetwork-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1843CEB517C33EAE0064E599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LibNetwork/LibNetwork-Prefix.pch";
+				INFOPLIST_FILE = "LibNetwork/LibNetwork-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1843CE8B17C33EAE0064E599 /* Build configuration list for PBXProject "LibNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1843CEB117C33EAE0064E599 /* Debug */,
+				1843CEB217C33EAE0064E599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1843CEB317C33EAE0064E599 /* Build configuration list for PBXNativeTarget "LibNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1843CEB417C33EAE0064E599 /* Debug */,
+				1843CEB517C33EAE0064E599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1843CE8817C33EAE0064E599 /* Project object */;
+}
