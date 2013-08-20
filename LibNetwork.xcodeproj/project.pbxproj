@@ -20,6 +20,7 @@
 		1843CEB017C33EAE0064E599 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1843CEAE17C33EAE0064E599 /* ViewController.xib */; };
 		1843CEB917C340FA0064E599 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843CEB817C340FA0064E599 /* Network.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1843CEBC17C343490064E599 /* NetworkServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1843CEBB17C343490064E599 /* NetworkServerManager.m */; };
+		D2E6A6FC17C3961B002713FE /* NetworkConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6A6FB17C3961B002713FE /* NetworkConnectionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		1843CEB817C340FA0064E599 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		1843CEBA17C343490064E599 /* NetworkServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkServerManager.h; sourceTree = "<group>"; };
 		1843CEBB17C343490064E599 /* NetworkServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkServerManager.m; sourceTree = "<group>"; };
+		D2E6A6FA17C3961B002713FE /* NetworkConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConnectionManager.h; sourceTree = "<group>"; };
+		D2E6A6FB17C3961B002713FE /* NetworkConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConnectionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				1843CEB817C340FA0064E599 /* Network.m */,
 				1843CEBA17C343490064E599 /* NetworkServerManager.h */,
 				1843CEBB17C343490064E599 /* NetworkServerManager.m */,
+				D2E6A6FA17C3961B002713FE /* NetworkConnectionManager.h */,
+				D2E6A6FB17C3961B002713FE /* NetworkConnectionManager.m */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				1843CEAD17C33EAE0064E599 /* ViewController.m in Sources */,
 				1843CEB917C340FA0064E599 /* Network.m in Sources */,
 				1843CEBC17C343490064E599 /* NetworkServerManager.m in Sources */,
+				D2E6A6FC17C3961B002713FE /* NetworkConnectionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +324,7 @@
 				1843CEB517C33EAE0064E599 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

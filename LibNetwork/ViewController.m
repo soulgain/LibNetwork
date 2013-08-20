@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Network.h"
 #import "NetworkServerManager.h"
+#import "NetworkConnectionManager.h"
 
 @implementation ViewController
 
@@ -30,8 +31,11 @@
             NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             NSLog(@"%@", ret);
         }
-    }];
+    } andGroupName:nil];
     NSLog(@"%@", net);
+    
+    NetworkConnectionManager *a = [[NetworkConnectionManager alloc] init];
+    [a cancelAll];
 }
 
 - (void)didReceiveMemoryWarning

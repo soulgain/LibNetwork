@@ -20,7 +20,7 @@
 @property (nonatomic, copy) NSString *commonPara;
 
 + (NSURLRequest *)requestWithUri:(NSString*)uri params:(NSString*)params httpMethod:(NSString*)method;
-+ (Network *)send:(NSURLRequest *)request withBlock:(void (^)(NSData* data, NSError* error))handler;
++ (Network *)send:(NSURLRequest *)request withBlock:(void (^)(NSData* data, NSError* error))handler andGroupName:(NSString *)groupName;
 - (void)stop;
 
 @end

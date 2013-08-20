@@ -8,6 +8,7 @@
 
 #import "Network.h"
 #import "NetworkServerManager.h"
+#import "NetworkConnectionManager.h"
 
 static unsigned int connections = 0;
 
@@ -53,9 +54,15 @@ static unsigned int connections = 0;
     return [request autorelease];
 }
 
-+ (Network *)send:(NSURLRequest *)request withBlock:(void (^)(NSData* data, NSError* error))handler
++ (Network *)send:(NSURLRequest *)request withBlock:(void (^)(NSData* data, NSError* error))handler andGroupName:(NSString *)groupName
 {
     Network *net = [[Network alloc] init];
+    NetworkConnectionManager *connectionManager = [NetworkConnectionManager getInstance];
+    if ([groupName length]) {
+        [connectionManager addConnection:net withGroupName:groupName];
+    } else {
+        [connectionManager addConnection:net withGroupName:@"default"];
+    }
     [net start:request withBlock:handler];
     
     return [net autorelease];
