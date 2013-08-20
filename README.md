@@ -1,3 +1,3 @@
 LibNetwork
 ----
-Make easier to handle the network stuff, like the connection management.
+Make easier to handle the stuff of http request, and the connection management.
