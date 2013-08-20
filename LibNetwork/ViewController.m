@@ -23,7 +23,7 @@
     serverManager.serverAddress = @"ws.qunar.com";
     
     NSURLRequest *request = [Network requestWithUri:@"/all_lp.jcp" params:@"goDate=2013-08-20&from=上海&to=北京&output=json&count=5" httpMethod:HTTP_GET];
-    Network *net = [Network send:request withBlock:^(NSData *data, NSError *error) {
+    [Network send:request withBlock:^(NSData *data, NSError *error) {
         if (error) {
             // handle error
             NSLog(@"%@", error);
@@ -31,11 +31,7 @@
             NSString *ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
             NSLog(@"%@", ret);
         }
-    } andGroupName:nil];
-    NSLog(@"%@", net);
-    
-    NetworkConnectionManager *a = [[NetworkConnectionManager alloc] init];
-    [a cancelAll];
+    } andGroupName:@"groupName"];
 }
 
 - (void)didReceiveMemoryWarning
